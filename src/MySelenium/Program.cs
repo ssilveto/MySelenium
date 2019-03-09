@@ -21,7 +21,6 @@ namespace MySelenium
                 if (rojyLinkExtracted == rojyLinkExpected)
                 {
                     Console.WriteLine("Link");
-                    Console.ReadLine();
                 }
 
 
@@ -32,6 +31,18 @@ namespace MySelenium
                 if (rojyImage.Displayed && rojyImage.Enabled && expectedSrcValue == extractedSrcValue)
                 {
                     Console.WriteLine("Tam e");
+                }
+
+                IWebElement telephoneNumber = driver.FindElementById("contactNumber");
+                string extractedTelephoneNumber = telephoneNumber.Text;
+                string expectedTelephoneNumber = "+359 896 222 575";
+                if (extractedTelephoneNumber == expectedTelephoneNumber)
+                {
+                    Console.WriteLine("Telephone Number");
+                }
+                else
+                {
+                    Console.WriteLine("Wrong");
                 }
             }
         }
