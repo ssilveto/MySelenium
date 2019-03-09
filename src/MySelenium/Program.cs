@@ -16,11 +16,6 @@ namespace MySelenium
             {
                 driver.Url = url;
 
-                string pageSource = driver.PageSource;
-                File.WriteAllText("source.html", pageSource);
-
-                Screenshot myScreenshot = driver.GetScreenshot();
-                myScreenshot.SaveAsFile($"ss-{DateTime.UtcNow.ToString("yyyyMMdd-hhmmss-fff")}.png");
             }
         }
     }
