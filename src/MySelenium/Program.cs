@@ -25,7 +25,6 @@ namespace MySelenium
                 }
 
 
-
                 IWebElement rojyImage = driver.FindElementByTagName("img");
 
                 string extractedSrcValue = rojyImage.GetAttribute("src");
