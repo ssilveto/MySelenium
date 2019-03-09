@@ -7,7 +7,7 @@ namespace Tests
 {
     public class When_extracting_a_number
     {
-        Because of = () => extractedValue = 8;
+        Because of = () => extractedValue = 7;
 
         It should_have_the_correct_value = () => extractedValue.ShouldEqual(expectedValue);
 
